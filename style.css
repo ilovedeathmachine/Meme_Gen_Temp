@@ -1,0 +1,60 @@
+
+
+html, body {
+  font-family: monospace;
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1 {
+  text-align: center;
+  color: teal;
+  font-size: 3.7em;
+}
+
+
+#memeContainer {
+    margin: 20px auto;
+    width: 400px;
+    font-family: sans-serif;
+}
+
+
+#memeContainer label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 1.7em;
+}
+
+#memeContainer input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#meme {
+    width: 100%;
+}
+
+.btn {
+    border-radius: 5px;
+    font-family: monospace;
+    margin-left: 4em;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+
+
+

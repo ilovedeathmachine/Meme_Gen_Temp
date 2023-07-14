@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meme Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>MEME GENERATOR</h1>
+  
+  <div id="memeContainer">
+    <div class="inputContai">
+      <label class="addImgLabel">Select an image:</label>
+      <input type="file" id="imageFileInput">
+    </div>
+  
+    <!-- <strong>OR:</strong> -->
+  
+    <div>
+      <label class="addImgLabel">Add image URL:</label>
+      <input type="text" id="imageURLInput" placeholder="Add image URL">
+    </div>
+
+    <input type="text" id="topText" placeholder="Enter top text">
+    <input type="text" id="bottomText" placeholder="Enter bottom text">
+
+    <br>
+
+    <button id="btn" class="btn">Generate Meme</button>
+    <button id="saveBtn" class="btn">Save Meme</button>
+
+    <canvas id="meme"></canvas>
+  </div>
+
+  <h2>Previously saved:</h2>
+
+  <div id="savedMemes"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
