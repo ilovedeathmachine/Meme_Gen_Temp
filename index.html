@@ -1,43 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Meme Generator</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-
-<body>
-
-  <h1>MEME GENERATOR</h1>
-  
-  <div id="memeContainer">
-    <div class="inputContai">
-      <label class="addImgLabel">Select an image:</label>
-      <input type="file" id="imageFileInput">
-    </div>
-  
-    <!-- <strong>OR:</strong> -->
-  
-    <div>
-      <label class="addImgLabel">Add image URL:</label>
-      <input type="text" id="imageURLInput" placeholder="Add image URL">
-    </div>
-
-    <input type="text" id="topText" placeholder="Enter top text">
-    <input type="text" id="bottomText" placeholder="Enter bottom text">
-
-    <br>
-
-    <button id="btn" class="btn">Generate Meme</button>
-    <button id="saveBtn" class="btn">Save Meme</button>
-
-    <canvas id="meme"></canvas>
-  </div>
-
-  <h2>Previously saved:</h2>
-
-  <div id="savedMemes"></div>
-
-  <script src="app.js"></script>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meme Generator</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <form action="">
+            <h1>Meme Generator</h1>
+            <label for="upperTextInput">Text on Top:</label>
+            <input id="upperTextInput" type="text" placeholder="Enter the text for the top of the meme."/>
+            <br />
+            <label for="lowerTextInput">Text on Bottom:</label>
+            <input id="lowerTextInput" type="text" placeholder="Enter the text for the bottom of the meme."/>
+            <br />
+            <label for="imageUrlInput">Image URL:</label>
+            <input id="imageUrlInput" type="text" placeholder="Enter a valid image URL."/>
+            <br />
+            <button type="submit">Generate Meme</button>
+        </form>
+        <div id="memeContainer">
+        </div>
+        <script src="js/app.js"></script>
+    </body>
 </html>
