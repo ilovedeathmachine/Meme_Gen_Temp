@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+form {
+    width: auto;
+    height: 300px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #b6baca;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 30px 50px 30px;
+    text-align: end;
+}
+
+form h1 {
+    /* I borrowed this "classic meme text" formatting from a code pen: */
+    /* https://codepen.io/MetalEscape/pen/WrYxVM */
+    margin: 15px;
+    text-align: center;
+    font-family: impact;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+        -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+        -2px 0px 0 #000, 2px 2px 5px #000;
+}
+
+form label,
+input,
+button {
+    font-size: 30px;
+    margin: 10px;
+}
+
+form label {
+    position: absolute;
+    left: 30px;
+}
+form input {
+    width: 80%;
+}
+
+form button {
+    background-color: #2949bb;
+    color: white;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background-color: #475d8f;
+}
+
+
+#memeContainer img {
+    width: 500px;
+}
+
+#memeContainer .memeDiv {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#memeContainer p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+        -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+        -2px 0px 0 #000, 2px 2px 5px #000;
+}
+
+.upperText {
+    top: 0px;
+}
+
+.lowerText {
+    bottom: 0px;
+}
+
+.memeDiv:hover .hoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.deleteBtn {
+    visibility: hidden;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 10em;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: gray;
+}
+
+.memeDiv:hover .deleteBtn {
+    visibility: visible;
+}
+
+.deleteBtn:hover {
+    color: aliceblue;
+}
